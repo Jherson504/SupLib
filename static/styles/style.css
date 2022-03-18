@@ -1,0 +1,80 @@
+:root {
+  /* background colors */
+  --bg1: #ffffff1a;
+  --bg2: #238636;
+  --bg3: #1f6feb;
+  --bg4: #21262d;
+  --bg5: #161b22;
+  --bg6: #0d1117;
+  --bg7: #010409;
+  --bg8: #eaeaea;
+  /* text colors */
+  --tc1: #fff;
+  --tc2: #ffffffb3;
+  --tc3: #f0f6fc;
+  --tc4: #c1d1d9;
+  --tc5: #58a6ff;
+  --tc6: #8b949e;
+  --tc7: #484f58;
+  /* border color */
+  --bd1: #fff3;
+}
+/* general rules */
+/**** space rule */
+div,
+aside,
+section,
+table,
+main {
+  padding: 0.2rem 1rem 0.2rem 1rem;
+}
+/**** border rule */
+div,
+main,
+aside,
+section,
+p,
+a,
+table,
+textarea,
+input {
+  border-radius: 0.2rem;
+  border-color: var(--bd1);
+  border-width: 0.1rem;
+}
+div,
+main,
+aside,
+section,
+p,
+a {
+  border-style: outset;
+}
+table,
+textarea,
+input {
+  border-style: inset;
+}
+/* endblock general rule*/
+
+/* intent */
+/**** element */
+body {
+  background-color: var(--bg7);
+  color: var(--tc1);
+}
+/**** class */
+.container {
+  margin: 1rem;
+  background-color: var(--bg6);
+}
+.primary-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  border: none;
+  background-color: transparent;
+}
+
+.main-container {
+  min-height: 50rem;
+}

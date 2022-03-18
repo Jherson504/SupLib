@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'styles/style.css' %}">
+
+<div class="container primary-container">
+    <aside class="container left"></aside>
+    <main class="container main-container"></main>
+    <aside class="container right"></aside>
+</div>
+
+
+{% endblock content %}
