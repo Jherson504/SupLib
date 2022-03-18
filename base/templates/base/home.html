@@ -3,11 +3,40 @@
 {% load static %}
 
 <link rel="stylesheet" href="{% static 'styles/style.css' %}">
-
-<div class="container primary-container">
-    <aside class="container left"></aside>
-    <main class="container main-container"></main>
-    <aside class="container right"></aside>
+<div>
+    <header id="header">
+        <nav>
+            <a href="#">Home</a>
+        </nav>
+    </header>
+    <div class="container primary-container">
+        <aside class="container left"></aside>
+        <div class="container main-container">
+            <header>
+                <p>Super Library</p>
+            </header>
+            <main>
+                {% for book in books %}
+                <div class="container sample-book">
+                    <div class="sample-book-header">
+                        <p class="sample-book-title">{{book.title}}</p>
+                        <p>{{book.created|timesince}} ago</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolor numquam, nihil hic ullam
+                        quibusdam repudiandae sint, quas perspiciatis harum, possimus modi facilis quia. Quisquam quam
+                        atque, assumenda vero sed facere ipsum dolorem omnis quibusdam nam excepturi corrupti, ea
+                        repudiandae dignissimos iste aliquam? Voluptatibus dolor nisi, sint dicta soluta ut dolore!
+                        Ullam
+                        provident blanditiis nobis voluptas numquam ducimus cum! Molestias, delectus! Commodi facere,
+                        aspernatur exercitationem excepturi sapiente culpa quis iure magnam suscipit, quod non possimus
+                        omnis, dolorum consequuntur molestias eum.</p>
+                </div>
+                {% endfor %}
+            </main>
+            <footer></footer>
+        </div>
+        <aside class="container right"></aside>
+    </div>
 </div>
 
 

@@ -28,6 +28,10 @@ table,
 main {
   padding: 0.2rem 1rem 0.2rem 1rem;
 }
+/**** text container space rule */
+p {
+  padding: 1rem 0.5rem 1rem 0.5rem;
+}
 /**** border rule */
 div,
 main,
@@ -63,7 +67,30 @@ body {
   background-color: var(--bg7);
   color: var(--tc1);
 }
+main {
+  background-color: transparent;
+  border: none;
+}
+header {
+  font-size: larger;
+  background-color: var(--bg5);
+  text-align: right;
+}
 /**** class */
+
+.sample-book-header {
+  background-color: var(--bg4);
+}
+.sample-book-header p {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+.sample-book-title {
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
 .container {
   margin: 1rem;
   background-color: var(--bg6);
@@ -74,7 +101,18 @@ body {
   border: none;
   background-color: transparent;
 }
-
+.sample-book {
+  background-color: var(--bg5);
+}
 .main-container {
   min-height: 50rem;
+}
+#header {
+  background-color: var(--bg6);
+  height: fit-content;
+  border-style: outset;
+  border-width: 0.1rem;
+  padding: 0.2rem;
+  text-align: left;
+  border-color: var(--bd1);
 }
