@@ -54,9 +54,16 @@ p,
 a {
   border-style: outset;
 }
+input:-ms-keyboard-active {
+  border-style: inset;
+  border-width: 0.1rem;
+  border-color: var(--bd1);
+}
 table,
 textarea,
 input {
+  width: 100%;
+  background-color: var(--bg5);
   border-style: inset;
 }
 /* endblock general rule*/
